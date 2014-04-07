@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html lang="pt-br" ng-app="website">
+<link rel="icon" href="img/favicon.png" />
+<head>
+<title>Tras Avante Transporte Executivo</title>
+<meta property="og:title" content="teixeiraeadvogados.com - Teixeira, Direito do Consumidor, Família, Desaposentação e Sucessões">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://www.teixeiraeadvogados.com/">
+<meta property="og:image" content="http://teixeiraeadvogados.com/img/sprite.png">
+<meta property="og:site_name" content="teixeiraeadvogados.com">
+<meta property="og:description" content="Advogado Teixeira Rio de Janeiro. Direito do consumidor, família, desaposentação e sucessões.">
+<meta name="description" content="Teixeira e Advogados, Rio de Janeiro. Direito do consumidor, família, desaposentação e sucessões.">
+<meta name="keywords" content=" advogados, advogados rio de janeiro, assessoria juridica, consultor juridico, ação indenizatória, processo por danos morais, orientação jurídica, direito de herança">
+<meta name="application-name" content="Teixeiraeadvogados.com">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="keywords" content="teixeiraeadvogados, advogado, advocacia" >
+<!-- CSS -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" media="only screen and (max-device-width: 1024px) and (min-device-width: 610px)" href="css/ipad.css" type="text/css" />
+<!-- JS -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/angular/angular.min.js"></script>
+<script type="text/javascript" src="js/website.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+
+<?php include_once("analyticstracking.php") ?>
+</head>
+<body ng-controller="MainCtrl">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="loading">
+    <div class="complete-loader"><img src="img/ajax-loader.gif" /> <div class="logo-loader"></div></div>
+</div>
+<!-- HEADER -->
+<div class="row">
+	<div class="header col-lg-12">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<a ng-click="setRoute('home')" class="home"><div class="logo"><img src="img/logo.png"></div></a>
+				</div>
+				<div class="row">
+  				<div class="col-lg-6 col-md-12 menu">
+  					<ul>
+  						<li><a ng-click="setRoute('home')" class="home">Home</a></li>
+  						<li><a ng-click="setRoute('services')"  class="servicesmenu">Quem somos</a></li>
+              <li><a ng-click="setRoute('midia')"  class="midiamenu">Nossos veículos</a></li>
+  						<li><a ng-click="setRoute('contact')"  class="contactmenu">Contato</a></li>
+  					</ul>
+  				</div>
+          <div class="col-lg-2">
+            <div class="telephone"><img src="img/phone.png"></div>
+          </div>
+        </div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row hide">
+  <div class="mainads">
+    <div class="pull-left mainadborder">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/img4.png" class="" alt="..." data-toggle="modal" data-target="#Allures45">
+          </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <div class="arrow-left">
+        </div>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <div class="arrow-right">
+        </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid pull-left">
+    
+  </div>
+</div>
+
+<img class="folhasanimation" src="img/folhas.png">
+
+
+
+<div class="col-lg-12">
+    <div class="col-lg-12 adtexts">
+      <img class="car1" src="img/car1.png">
+      <div class="adblock">
+        <div class="adtext1">Automóveis para aluguel</div><br>
+        <div class="adtext2">executivos e privados</div><br>
+        <div class="adtext3">em Macaé e região.</div>
+      </div>
+      <img class="car1" src="img/car2.png">
+      <img class="car1" src="img/car3.png">
+    </div>  
+  </div>
+
+<div class="container">
+	<div class=""> 
+		
+
+		<!-- Modal -->
+		
+		<div ng-view></div>
+	</div>
+</div>
+<div class="footer">
+  <div class="row">
+  <div class="container"> 
+    <div class="col-lg-7 col-md-12 tel">
+      <div class="fb-like" data-href="https://www.facebook.com/artinsugar" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+    </div>
+    <div class="col-lg-5 col-md-12 tel">
+      <span class="call-today">Endereço: </span> <span class="tel-number"> Rua Manoel Francisco Nunes n 9a Novo Cavaleiros Macaé 27930045</span><br>
+    </div>
+  </div>
+</div>
+</div>
+
+<script type="text/javascript" src="js/javascript.js"></script>
+
+</body>
+	
+</html>
+
